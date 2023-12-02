@@ -1,5 +1,3 @@
 # PMLDL. Assignment 2 - Movie Recommender System
-#### Voronova Aleksandra
-#### a.voronova@innopolis.university
-#### BS21-DS-02
+#### Voronova Aleksandra, BS21-DS-02, a.voronova@innopolis.university
 
