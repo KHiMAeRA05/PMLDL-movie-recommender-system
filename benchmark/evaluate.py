@@ -24,13 +24,13 @@ def evaluate(model, data):
 def main():
     # File paths for the trained model and testing dataset
     model_file = '/kaggle/working/PMLDL_movie_recommender_system/models/model.pkl'
-    test_file = '/kaggle/working/PMLDL_movie_recommender_system/data/interim/preprocessed_data.csv'
+    data_file = '/kaggle/working/PMLDL_movie_recommender_system/data/interim/preprocessed_data.csv'
 
-    test_data = load_data(test_file)
+    data = load_data(data_file)
 
     trained_model = load_surprise_model(model_file)['algo']
 
-    surprise_test_data = load_surprise_data(test_data)
+    surprise_test_data = load_surprise_data(data)
 
     # Evaluate the model
     benchmark_score = evaluate(trained_model, surprise_test_data)
